@@ -51,17 +51,14 @@ class NoteTableViewCell: UITableViewCell {
     func configure(with note: Notes) {
         titleLabel.text = note.title
         noteLabel.text = note.note
-        layer.cornerRadius = 5
-        layer.borderColor = UIColor.black.cgColor
-        layer.borderWidth = 0.1
     }
 }
 
 private extension NoteTableViewCell {
     func setupViews() {
         layer.cornerRadius = 5
-        layer.borderColor = UIColor.black.cgColor
-        layer.borderWidth = 0.1
+        accessoryType = .disclosureIndicator
+        layer.cornerRadius = 10
         addSubview(verticalStack)
         verticalStack.addArrangedSubview(titleLabel)
         verticalStack.addArrangedSubview(noteLabel)

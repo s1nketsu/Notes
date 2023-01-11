@@ -35,6 +35,7 @@ class DetailNoteViewController: UIViewController {
         let textField = UITextField()
         textField.placeholder = "Enter title"
         textField.textColor = .black
+        textField.backgroundColor = .white
         textField.font = .systemFont(ofSize: 20, weight: .semibold)
         textField.layer.cornerRadius = 5
         textField.layer.borderColor = UIColor.black.cgColor
@@ -101,7 +102,7 @@ private extension DetailNoteViewController {
     func setupViews() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveButtonTapped))
         navigationItem.largeTitleDisplayMode = .never
-        view.backgroundColor = .white
+        view.backgroundColor = #colorLiteral(red: 0.9495812058, green: 0.9486090541, blue: 0.9699956775, alpha: 1)
         view.addSubview(titleLabel)
         view.addSubview(titleTextField)
         view.addSubview(noteTextLabel)

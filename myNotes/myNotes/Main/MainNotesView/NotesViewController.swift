@@ -14,8 +14,11 @@ class NotesViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.layer.cornerRadius = 5
-        tableView.separatorStyle = .none
+        tableView.layer.cornerRadius = 10
+        tableView.separatorColor = view.backgroundColor
+        tableView.backgroundColor = .clear
+        tableView.separatorStyle = .singleLine
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 0)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(NoteTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
@@ -65,12 +68,11 @@ class NotesViewController: UIViewController {
             isEmptyLabel.isHidden = true
         }
     }
-
 }
 
 private extension NotesViewController {
     func setupView() {
-        view.backgroundColor = .white
+        view.backgroundColor = #colorLiteral(red: 0.9495812058, green: 0.9486090541, blue: 0.9699956775, alpha: 1)
         title = "Notes"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.tintColor = .black

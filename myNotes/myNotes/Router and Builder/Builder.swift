@@ -34,6 +34,4 @@ class BuilderImplementation: Builder {
         viewController.configureChosenNote(with: model)
         return viewController
     }
-    
-
 }

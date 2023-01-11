@@ -19,7 +19,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="IdA-8Q-N2e"/>
+                        <barButtonItem title="Item" image="chevron" id="IdA-8Q-N2e"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -29,6 +29,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
