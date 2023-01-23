@@ -1,5 +1,5 @@
 # Notes
-Test task for CFT
+UITableView Notes App. Stack: UIKit, CoreData
 
 <p float="left">
 <img src= "https://user-images.githubusercontent.com/101808708/211877989-bcffc4a1-a1f7-4ecd-bfec-ed195dd7fff1.PNG" height="550" width="250" />
